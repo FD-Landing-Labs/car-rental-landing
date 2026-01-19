@@ -1,9 +1,10 @@
 import NavBar from "./nav-bar";
-
+import HeroSection from "./hero-section";
 export default function LandingPage() {
     return (
         <div>
-            <NavBar />
+           
+            <HeroSection />
             
         </div>
     );
