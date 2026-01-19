@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Zalando_Sans } from "next/font/google";
 import "./globals.css";
-
+import NavBar from "@/components/nav-bar";
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
@@ -25,6 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.variable} ${zalando.variable} antialiased`}>
+        <NavBar />
         {children}
       </body>
     </html>
