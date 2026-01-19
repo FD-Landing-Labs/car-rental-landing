@@ -24,7 +24,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${zalando.variable} antialiased`}>
+      <body
+        className={`${inter.variable} ${zalando.variable} antialiased pt-24`}
+      >
         <NavBar />
         {children}
       </body>
