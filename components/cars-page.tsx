@@ -105,7 +105,7 @@ export default function CarsPage() {
                 <button className="bg-gray-200 text-black px-4 py-2.5 rounded-full text-sm font-medium hover:bg-gray-400 transition-colors">
                   View Details
                 </button>
-                <button className="bg-black text-white px-4 py-2.5 rounded-full text-sm font-medium hover:bg-gray-900 transition-colors">
+                <button className="bg-[#1a3edb] hover:bg-blue-800 text-white px-4 py-2.5 rounded-full text-sm font-medium hover:bg-gray-900 transition-colors">
                   Book Now
                 </button>
               </div>

@@ -35,12 +35,12 @@ export default function Faq() {
   ];
 
   return (
-    <section className="bg-white py-24 px-4">
+    <section className="bg-white   px-4">
       
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-2">
           {/* Left Side - Text */}
           <div className="flex flex-col   gap-6">
-            <h2 className="font-header text-4xl md:text-5xl text-black leading-tight">
+            <h2 className="font-header text-2xl md:text-5xl text-black leading-tight">
               Got questions?  We&apos;ve got answers!
             </h2>
             <p className="font-sans text-gray-500 text-md leading-relaxed md:max-w-md">
@@ -58,10 +58,10 @@ export default function Faq() {
                   value={`item-${index}`}
                   className="bg-gray-200 p-2 rounded-lg hover:bg-gray-300 transition-colors "
                 >
-                  <AccordionTrigger className="text-black font-inter  font-medium text-lg hover:no-underline py-6">
+                  <AccordionTrigger className="text-black font-inter  font-medium text-md md:text-lg hover:no-underline py-6">
                     {faq.question}
                   </AccordionTrigger>
-                  <AccordionContent className="text-gray-500 text-base  leading-relaxed pb-4">
+                  <AccordionContent className="text-gray-500 text-sm md:text-base  leading-relaxed pb-4">
                     {faq.answer}
                   </AccordionContent>
                 </AccordionItem>

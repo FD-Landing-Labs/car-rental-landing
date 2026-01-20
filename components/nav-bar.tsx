@@ -125,7 +125,7 @@ export default function NavBar() {
               className="border-b border-gray-100 last:border-none"
             >
               <div
-                className={`flex justify-between items-center py-4 text-lg font-medium cursor-pointer ${
+                className={`flex justify-between items-center py-4 text-md font-medium cursor-pointer ${
                   activeItem === item ? "text-[#1a3edb]" : "text-gray-700"
                 }`}
                 onClick={() => handleNavClick(item)}

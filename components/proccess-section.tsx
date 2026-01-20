@@ -40,10 +40,10 @@ export default function ProccessSection() {
         {/* Header */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-8">
           <div className="max-w-2xl">
-            <h2 className="font-header text-3xl md:text-5xl text-black leading-[1.1] mb-6 tracking-tight">
+            <h2 className="font-header text-2xl md:text-5xl text-black leading-[1.1] mb-6 tracking-tight">
               Simple. Fast. Hassle-Free
             </h2>
-            <p className="text-gray-500 text-lg  leading-tight max-w-xl">
+            <p className="text-gray-500 text-md md:text-lg   max-w-xl">
               Experience a smooth rental process designed to get you on the road
               in minutes. From selecting your dream car to confirming your
               booking
