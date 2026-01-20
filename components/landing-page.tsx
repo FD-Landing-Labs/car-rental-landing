@@ -5,6 +5,7 @@ import About from "./about";
 import CarsPage from "./cars-page";
 import Faq from "./faq";
 import { TestimonialSection } from "./testimonial-section";
+import TopPicksCar from "./top-picks-car";
 export default function LandingPage() {
   return (
     <div>
@@ -12,6 +13,7 @@ export default function LandingPage() {
       <MarqueeBrand />
       <About />
       <CarsPage />
+      <TopPicksCar />
       <TestimonialSection />
       <Faq />
     </div>
