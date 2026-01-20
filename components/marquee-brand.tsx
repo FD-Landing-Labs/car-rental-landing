@@ -18,7 +18,7 @@ const marqueeBrands = [
 
 export default function MarqueeBrand() {
   return (
-    <div className="w-full overflow-hidden bg-white px-4 py-4 md:py-4">
+    <div className=" overflow-hidden   bg-white mx-4 md:mx-4">
       <div className="flex animate-scroll whitespace-nowrap">
         {/* First set of images */}
         <div className="flex items-center gap-8 mx-4 md:gap-16 md:mx-16">
