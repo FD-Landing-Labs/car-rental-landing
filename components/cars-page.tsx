@@ -102,10 +102,10 @@ export default function CarsPage() {
 
               {/* Action Buttons */}
               <div className="grid grid-cols-1 gap-3 mt-auto">
-                <button className="bg-gray-200 text-black px-4 py-2.5 rounded-full text-sm font-medium hover:bg-white/10 transition-colors">
+                <button className="bg-gray-200 text-black px-4 py-2.5 rounded-full text-sm font-medium hover:bg-gray-400 transition-colors">
                   View Details
                 </button>
-                <button className="bg-black text-white px-4 py-2.5 rounded-full text-sm font-medium hover:bg-gray-100 transition-colors">
+                <button className="bg-black text-white px-4 py-2.5 rounded-full text-sm font-medium hover:bg-gray-900 transition-colors">
                   Book Now
                 </button>
               </div>
