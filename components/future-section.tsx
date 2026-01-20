@@ -2,13 +2,13 @@ import Image from "next/image";
 
 export default function FutureSection() {
   return (
-    <div className="px-4 py-14 bg-gray-100 space-y-14">
+    <div className="mx-4 p-6  rounded-lg py-14 bg-gray-100 space-y-14">
       <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8">
         <div className="flex flex-col gap-4 max-w-2xl">
           <span className="text-3xl md:text-4xl font-medium font-header">
             Luxury Meets Reliability
           </span>
-          <span className="text-gray-600">
+          <span className="text-gray-600 font-inter">
             Discover the perfect blend of opulence and dependability{" "}
             <br className="hidden md:block" /> with our premium car rental
             services.

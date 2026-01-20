@@ -34,11 +34,11 @@ export default function CarsPage() {
   return (
     <div className="flex flex-col px-4 py-12 md:py-24 gap-12 ">
       <div className="flex flex-col gap-4">
-        <h2 className="text-black font-header text-3xl md:text-5xl ">
+        <h2 className="text-black font-header text-3xl md:text-4xl ">
           Find Your Perfect Ride
         </h2>
         <div className="flex flex-col md:flex-row justify-between items-end gap-6">
-          <p className="md:w-1/2 font-sans text-gray-500 text-md md:text-lg">
+          <p className="md:w-1/2 font-inter text-gray-500 text-md md:text-lg">
             Explore a handpicked collection of luxury and performance cars built
             for every journey. From sleek sedans to bold SUVs and electric
             innovators

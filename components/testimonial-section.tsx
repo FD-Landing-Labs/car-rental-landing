@@ -72,7 +72,7 @@ export const TestimonialSection = () => {
             <h2 className="font-header text-3xl md:text-5xl text-black leading-[1.1] mb-6 tracking-tight">
               Trusted by Thousands
             </h2>
-            <p className="text-gray-500 text-md leading-relaxed max-w-md">
+            <p className="text-gray-500 text-md leading-relaxed max-w-md font-inter">
               Real experiences from real drivers. See why thousands of customers
               trust us for comfort, quality, and reliability every time they hit
               the road.

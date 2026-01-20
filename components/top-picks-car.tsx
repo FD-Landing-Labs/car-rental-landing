@@ -53,7 +53,7 @@ export default function TopPicksCar() {
 
   return (
     <section className="py-24 bg-white">
-      <div className="max-w-[1400px] mx-auto px-4 md:px-8">
+      <div className=" px-4 md:px-4">
         {/* Header with Nav Buttons */}
         <div className="flex flex-col gap-6 mb-12">
           <div className="flex flex-col md:flex-row justify-between items-end gap-6">
@@ -61,7 +61,7 @@ export default function TopPicksCar() {
               <span className="text-3xl md:text-5xl font-header text-black tracking-tight leading-[1.1]">
                 Top Picks This Week
               </span>
-              <p className="w-full md:w-4/5 text-gray-500 md:text-lg text-sm leading-relaxed">
+              <p className="w-full md:w-4/5 text-gray-500 md:text-lg text-sm leading-relaxed font-inter">
                 Explore our most rented and loved cars handpicked for
                 performance and elegance
               </p>
@@ -80,7 +80,7 @@ export default function TopPicksCar() {
         {/* Cars Slider */}
         <div
           ref={scrollRef}
-          className="flex gap-6 overflow-x-auto pb-8 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide snap-x snap-mandatory"
+          className="flex gap-6 overflow-x-auto pb-8 -mx-4 px-4 md:mx-0 md:px-  0 scrollbar-hide snap-x snap-mandatory"
           style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
         >
           {toppicks.map((car) => (

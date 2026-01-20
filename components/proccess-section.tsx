@@ -43,7 +43,7 @@ export default function ProccessSection() {
             <h2 className="font-header text-2xl md:text-5xl text-black leading-[1.1] mb-6 tracking-tight">
               Simple. Fast. Hassle-Free
             </h2>
-            <p className="text-gray-500 text-md md:text-lg   max-w-xl">
+            <p className="text-gray-500 text-md md:text-lg max-w-xl font-inter">
               Experience a smooth rental process designed to get you on the road
               in minutes. From selecting your dream car to confirming your
               booking
@@ -66,7 +66,7 @@ export default function ProccessSection() {
                 <h3 className="font-header text-xl md:text-2xl text-black mb-2 ">
                   {step.title}
                 </h3>
-                <p className="text-gray-500 text-sm md:text-base leading-relaxed">
+                <p className="text-gray-500 text-sm md:text-base leading-relaxed font-inter">
                   {step.description}
                 </p>
               </div>
