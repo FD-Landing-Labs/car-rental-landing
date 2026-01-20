@@ -35,7 +35,7 @@ export default function Faq() {
   ];
 
   return (
-    <section className="bg-white   px-4">
+    <section className="bg-white pb-14  px-4">
       
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-2">
           {/* Left Side - Text */}
