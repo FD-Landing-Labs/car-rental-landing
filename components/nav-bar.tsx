@@ -118,7 +118,7 @@ export default function NavBar() {
           isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <div className="flex flex-col gap-1 overflow-y-auto max-h-[calc(100vh-100px)]">
+        <div className="flex flex-col  overflow-y-auto max-h-[calc(100vh-100px)]">
           {navItems.map((item) => (
             <div
               key={item}
@@ -159,14 +159,11 @@ export default function NavBar() {
             </div>
           ))}
 
-          <div className="mt-6 flex flex-col gap-4 pb-8">
+          <div className="mt-6 flex flex-col gap-4 pb-4">
             <button className="w-full bg-[#1a3edb] text-white py-3 cursor-pointer rounded-full font-medium hover:bg-blue-700 transition-colors">
               Contact Us
             </button>
-            <button className="w-full bg-gray-100 text-[#1a3edb] py-3 cursor-pointer rounded-full font-medium hover:bg-gray-200 transition-colors border border-gray-200 flex items-center justify-center gap-2">
-              <Search size={18} />
-              Search
-            </button>
+            
           </div>
         </div>
       </div>
