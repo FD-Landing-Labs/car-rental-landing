@@ -18,7 +18,15 @@ const marqueeBrands = [
 
 export default function MarqueeBrand() {
   return (
-    <div className=" overflow-hidden   bg-white mx-4 md:mx-4">
+    <div
+      className="overflow-hidden bg-white mx-4 md:mx-4"
+      style={{
+        maskImage:
+          "linear-gradient(to right, transparent, rgba(0, 0, 0, 0.2) 10%, black 40%, black 60%, rgba(0, 0, 0, 0.2) 90%, transparent)",
+        WebkitMaskImage:
+          "linear-gradient(to right, transparent, rgba(0, 0, 0, 0.2) 10%, black 40%, black 60%, rgba(0, 0, 0, 0.2) 90%, transparent)",
+      }}
+    >
       <div className="flex animate-scroll whitespace-nowrap">
         {/* First set of images */}
         <div className="flex items-center gap-8 mx-4 md:gap-16 md:mx-16">
