@@ -6,6 +6,7 @@ import CarsPage from "./cars-page";
 import Faq from "./faq";
 import { TestimonialSection } from "./testimonial-section";
 import TopPicksCar from "./top-picks-car";
+import ProccessSection from "./proccess-section";
 export default function LandingPage() {
   return (
     <div>
@@ -14,6 +15,7 @@ export default function LandingPage() {
       <About />
       <CarsPage />
       <TopPicksCar />
+      <ProccessSection />
       <TestimonialSection />
       <Faq />
     </div>
