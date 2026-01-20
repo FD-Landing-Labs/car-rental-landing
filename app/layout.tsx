@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Zalando_Sans } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/nav-bar";
+import Footer from "@/components/footer";
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
@@ -29,6 +30,7 @@ export default function RootLayout({
       >
         <NavBar />
         {children}
+        <Footer />
       </body>
     </html>
   );
