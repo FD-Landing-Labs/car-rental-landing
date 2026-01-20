@@ -3,7 +3,7 @@ import HeroSection from "./hero-section";
 import MarqueeBrand from "./marquee-brand";
 import About from "./about";
 import CarsPage from "./cars-page";
-
+import Faq from "./faq";
 export default function LandingPage() {
   return (
     <div>
@@ -11,6 +11,7 @@ export default function LandingPage() {
       <MarqueeBrand />
       <About />
       <CarsPage />
+      <Faq />
     </div>
   );
 }
