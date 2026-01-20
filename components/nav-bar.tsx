@@ -39,7 +39,7 @@ export default function NavBar() {
 
   return (
     <>
-      <nav className="fixed top-0 left-0 right-0 flex justify-between p-4 border-b items-center z-50 bg-white h-20">
+      <nav className="fixed top-0 left-0 right-0 flex justify-between px-4 border-b items-center z-50 bg-white h-20">
         <Link href="/">
           <span className="font-medium text-lg md:text-xl text-[#1a3edb]">
             Dream Drive
