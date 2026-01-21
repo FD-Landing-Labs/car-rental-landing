@@ -8,7 +8,7 @@ export default function About() {
   ];
 
   return (
-    <section className="bg-white pt-10 px-4  ">
+    <section className="bg-white pt-10 px-4 md:px-14  ">
       <div className="flex flex-col md:flex-row justify-between items-start gap-10 py-14">
         {/* Left Side - Headline */}
         <div className="w-full md:w-1/2">
@@ -19,7 +19,7 @@ export default function About() {
 
         {/* Right Side - Description */}
         <div className="flex flex-col w-full md:w-8/12  gap-8">
-          <p className="text-black md:text-xl text-md leading-relaxed font-medium font-inter">
+          <p className="text-black md:text-2xl text-left text-md leading-tight tracking-tighter font-medium font-inter">
             Experience premium car rentalscrafted for comfort,perfomance, and
             style. Whether its a quick business trip or long{" "}
             <span className="text-gray-500">
@@ -27,7 +27,7 @@ export default function About() {
             </span>{" "}
           </p>
 
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-6 md:gap-4 border-t border-gray-300 pt-6">
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-6 md:gap-4 border-t border-gray-300 pt-6 font-inter">
             {stats.map((stat, index) => (
               <div
                 key={index}

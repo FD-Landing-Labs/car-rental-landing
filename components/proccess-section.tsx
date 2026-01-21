@@ -36,7 +36,7 @@ const processSteps = [
 export default function ProccessSection() {
   return (
     <section className="py-24 bg-white">
-      <div className=" px-4 md:px-4">
+      <div className=" px-4 md:px-14">
         {/* Header */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-8">
           <div className="max-w-2xl">
@@ -49,7 +49,7 @@ export default function ProccessSection() {
               booking
             </p>
           </div>
-          <button className="bg-[#1a3edb] hover:bg-blue-800 text-white font-medium text-sm w-full md:w-auto px-6 py-3 rounded-full transition-colors cursor-pointer">
+          <button className="bg-[#1a3edb] font-inter hover:bg-blue-800 text-white font-medium text-sm w-full md:w-auto px-6 py-3 rounded-full transition-colors cursor-pointer">
             Start Booking
           </button>
         </div>

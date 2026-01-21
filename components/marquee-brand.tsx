@@ -19,7 +19,7 @@ const marqueeBrands = [
 export default function MarqueeBrand() {
   return (
     <div
-      className="overflow-hidden bg-white mx-4 md:mx-4"
+      className="overflow-hidden bg-white mx-4 md:mx-14 font-inter"
       style={{
         maskImage:
           "linear-gradient(to right, transparent, rgba(0, 0, 0, 0.2) 10%, black 40%, black 60%, rgba(0, 0, 0, 0.2) 90%, transparent)",

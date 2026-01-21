@@ -116,7 +116,7 @@ export const TestimonialSection = () => {
                   height={50}
                   className="mb-6"
                 />
-                <p className="text-gray-800 text-sm md:text-lg  leading-relaxed font-normal">
+                <p className="text-gray-800 text-sm md:text-lg  leading-relaxed font-inter">
                   {item.text}
                 </p>
               </div>
@@ -133,10 +133,12 @@ export const TestimonialSection = () => {
                   />
                 </div>
                 <div>
-                  <h4 className="font-medium text-black text-base leading-none mb-1">
+                  <h4 className="font-medium font-inter text-black text-base leading-none mb-1">
                     {item.name}
                   </h4>
-                  <span className="text-gray-500 text-sm">{item.location}</span>
+                  <span className="text-gray-500 text-sm font-inter">
+                    {item.location}
+                  </span>
                 </div>
               </div>
             </div>

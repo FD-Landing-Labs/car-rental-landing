@@ -32,25 +32,25 @@ export default function CarsPage() {
   ];
 
   return (
-    <div className="flex flex-col px-4 py-12 md:py-24 gap-12 ">
+    <div className="flex flex-col px-4 md:px-14 py-12 md:py-24 gap-12 ">
       <div className="flex flex-col gap-4">
         <h2 className="text-black font-header text-3xl md:text-4xl ">
           Find Your Perfect Ride
         </h2>
         <div className="flex flex-col md:flex-row justify-between items-end gap-6">
-          <p className="md:w-1/2 font-inter text-gray-500 text-md md:text-lg">
+          <p className="md:w-2/5 font-inter text-gray-500 text-sm md:text-lg leading-relaxed">
             Explore a handpicked collection of luxury and performance cars built
             for every journey. From sleek sedans to bold SUVs and electric
             innovators
           </p>
 
-          <button className="bg-[#1a3edb] hover:bg-blue-800 text-white font-medium text-sm w-full md:w-auto px-6 py-3 rounded-full transition-colors">
+          <button className="bg-[#1a3edb] hover:bg-blue-800 text-white font-inter  font-medium text-sm w-full md:w-auto px-6 py-3 rounded-full transition-colors">
             View All Cars
           </button>
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-3 font-inter gap-4">
         {cars.map((car) => (
           <div
             key={car.id}
@@ -68,13 +68,13 @@ export default function CarsPage() {
 
             {/* Content Section */}
             <div className="p-4 flex flex-col gap-4">
-              <h3 className="text-black font-header text-lg md:text-xl font-medium">
+              <h3 className="text-black font-header text-lg md:text-lg font-medium">
                 {car.name}
               </h3>
 
               {/* Specs Grid */}
               <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
-                <div className="flex gap-2 items-center bg-gray-200 rounded-full px-2 py-2">
+                <div className="flex gap-2 items-center bg-gray-200 rounded-full px-2 py-2 font-inter">
                   <CarFront size={16} className="text-black" />
                   <span className="text-black text-xs font-medium">
                     {car.type}

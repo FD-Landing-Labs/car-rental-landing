@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function FutureSection() {
   return (
-    <div className="mx-4 p-6  rounded-lg py-14 bg-gray-100 space-y-14">
+    <div className="mx-4 p-6  rounded-lg py-14 bg-gray-100 space-y-14 px-4 md:px-14">
       <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8">
         <div className="flex flex-col gap-4 max-w-2xl">
           <span className="text-3xl md:text-4xl font-medium font-header">
@@ -14,7 +14,7 @@ export default function FutureSection() {
             services.
           </span>
         </div>
-        <div className="flex gap-2 font-medium flex-wrap">
+        <div className="flex gap-2 font-inter font-medium flex-wrap">
           <button className="bg-[#1a3edb] hover:bg-blue-800 text-white px-4 py-2 rounded-full cursor-pointer text-sm md:text-base">
             Expert
           </button>
@@ -33,7 +33,7 @@ export default function FutureSection() {
         </div>
       </div>
 
-      <div className="flex flex-col bg-white p-6 rounded-lg shadow-md items-center justify-center gap-4 w-full md:w-1/2 lg:w-1/3 mx-auto text-center">
+      <div className="flex flex-col bg-white p-6 rounded-lg shadow-md items-center font-inter justify-center gap-4 w-full md:w-1/2 lg:w-1/3 mx-auto text-center">
         <span className="text-2xl font-medium font-header">Expert Service</span>
         <Image
           src="/assets/images/Nissan.png"
@@ -45,7 +45,7 @@ export default function FutureSection() {
         <span className="text-lg md:text-xl font-medium">
           Professional guidance for your perfect ride
         </span>
-        <button className="bg-[#1a3edb] hover:bg-blue-800 text-white px-6 py-2.5 rounded-full cursor-pointer font-medium transition-colors">
+        <button className="bg-[#1a3edb] hover:bg-blue-800 text-white px-6 py-2.5 rounded-full cursor-pointer font-inter font-medium transition-colors">
           Book Your Ride
         </button>
       </div>

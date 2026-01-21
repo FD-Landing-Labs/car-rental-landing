@@ -35,7 +35,7 @@ export default function Faq() {
   ];
 
   return (
-    <section className="bg-white pb-14  px-4">
+    <section className="bg-white pb-14  px-4 md:px-14">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-2">
         {/* Left Side - Text */}
         <div className="flex flex-col   gap-6">
@@ -59,12 +59,12 @@ export default function Faq() {
               <AccordionItem
                 key={index}
                 value={`item-${index}`}
-                className="bg-gray-200 p-2 rounded-lg hover:bg-gray-300 transition-colors "
+                className="bg-gray-200 px-4 rounded-lg hover:bg-gray-300 transition-colors  "
               >
-                <AccordionTrigger className="text-black font-inter  font-medium text-md md:text-lg hover:no-underline py-6">
+                <AccordionTrigger className="text-black font-inter  font-medium text-md  hover:no-underline cursor-pointer ">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-gray-500 text-sm md:text-base  leading-relaxed pb-4">
+                <AccordionContent className="text-gray-700 text-sm md:text-sm font-inter  leading-relaxed  cursor-pointer ">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>

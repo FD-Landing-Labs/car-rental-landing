@@ -12,12 +12,12 @@ export default function Footer() {
               <h3 className="text-xl font-medium font-header text-white">
                 Dream Drive
               </h3>
-              <p className="text-gray-400 text-sm leading-relaxed">
+              <p className="text-gray-400 text-sm leading-relaxed font-inter">
                 Experience the thrill of the road with our premium car rental
                 services. Luxury, comfort, and performance guaranteed.
               </p>
             </div>
-            <div className="flex gap-4">
+            <div className="flex gap-4 font-inter">
               <Link
                 href="#"
                 className="bg-gray-800 p-2 rounded-full text-white hover:bg-blue-600 transition-colors"
@@ -46,7 +46,7 @@ export default function Footer() {
               <h3 className="text-lg font-medium font-header mb-6">
                 Quick Links
               </h3>
-              <ul className="space-y-3 text-sm text-gray-400">
+              <ul className="space-y-3 text-sm text-gray-400 font-inter">
                 <li>
                   <Link href="/" className="hover:text-white transition-colors">
                     Home
@@ -80,7 +80,7 @@ export default function Footer() {
               <h3 className="text-lg font-medium font-header mb-4">
                 Contact Us
               </h3>
-              <ul className="space-y-3 text-sm text-gray-400">
+              <ul className="space-y-3 text-sm text-gray-400 font-inter">
                 <li className="pt-2">
                   <span className="block text-white font-medium">Address:</span>
                   123 Luxury Lane New York, NY 10001
@@ -101,7 +101,7 @@ export default function Footer() {
               <h3 className="text-lg font-medium font-header mb-6">
                 Newsletter
               </h3>
-              <p className="text-gray-400 text-sm mb-4">
+              <p className="text-gray-400 text-sm mb-4 font-inter">
                 Subscribe to our newsletter for the latest updates and exclusive
                 offers.
               </p>
@@ -124,8 +124,8 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500">
-          <p>© 2026 Dream Drive. All rights reserved.</p>
-          <div className="flex gap-6">
+          <p className="font-inter">© 2026 Dream Drive. All rights reserved.</p>
+          <div className="flex gap-6 font-inter">
             <Link href="#" className="hover:text-white transition-colors">
               Privacy Policy
             </Link>

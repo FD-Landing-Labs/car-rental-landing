@@ -41,7 +41,7 @@ export default function NavBar() {
     <>
       <nav className="fixed top-0 left-0 right-0 flex justify-between px-4 border-b items-center z-50 bg-white h-20">
         <Link href="/">
-          <span className="font-medium text-lg md:text-xl text-[#1a3edb]">
+          <span className="font-medium font-inter text-lg md:text-xl text-[#1a3edb]">
             Dream Drive
           </span>
         </Link>
@@ -55,8 +55,8 @@ export default function NavBar() {
                 onClick={() => handleNavClick(item)}
                 className={`cursor-pointer px-5 py-2 rounded-full transition-all duration-300 ease-in-out ${
                   activeItem === item
-                    ? "bg-white shadow-sm text-blue-700 font-medium scale-105"
-                    : "hover:bg-gray-200/50 hover:text-blue-900"
+                    ? "text-white shadow-sm bg-blue-700 font-inter font-medium"
+                    : "hover:bg-gray-200/50 hover:text-blue-900 font-inter"
                 }`}
               >
                 <div className="flex items-center gap-2">
@@ -84,7 +84,7 @@ export default function NavBar() {
               {carBrands.map((brand) => (
                 <div
                   key={brand}
-                  className="px-4 py-2 hover:bg-blue-50 cursor-pointer rounded-xl text-sm font-medium text-gray-700 hover:text-blue-700 transition-colors"
+                  className="px-4 py-2 hover:bg-blue-50 cursor-pointer rounded-xl text-sm font-inter font-medium text-gray-700 hover:text-blue-700 transition-colors"
                 >
                   {brand}
                 </div>
@@ -95,10 +95,10 @@ export default function NavBar() {
 
         {/* Desktop Right Actions */}
         <div className="hidden md:flex items-center gap-2">
-          <div className="flex items-center bg-gray-200 p-2 rounded-full cursor-pointer hover:bg-gray-300 transition-colors ">
+          <div className="flex items-center bg-gray-200 p-2 rounded-full cursor-pointer hover:bg-gray-300 transition-colors font-inter">
             <Search size={15} />
           </div>
-          <button className="bg-gray-200 border border-gray-300 font-medium text-[#1a3edb] px-4 py-2 rounded-full hover:bg-gray-300 cursor-pointer transition-colors">
+          <button className=" bg-[#1a3edb] text-white border border-gray-300 font-inter font-medium  px-4 py-2 rounded-full hover:bg-blue-600 cursor-pointer transition-colors">
             Contact Us
           </button>
         </div>
@@ -125,7 +125,7 @@ export default function NavBar() {
               className="border-b border-gray-100 last:border-none"
             >
               <div
-                className={`flex justify-between items-center py-4 text-md font-medium cursor-pointer ${
+                className={`flex justify-between items-center py-4 text-md font-inter font-medium cursor-pointer ${
                   activeItem === item ? "text-[#1a3edb]" : "text-gray-700"
                 }`}
                 onClick={() => handleNavClick(item)}
@@ -148,7 +148,7 @@ export default function NavBar() {
                     {carBrands.map((brand) => (
                       <div
                         key={brand}
-                        className="px-4 py-2 text-gray-600 hover:text-[#1a3edb] hover:bg-white rounded-lg transition-colors cursor-pointer"
+                        className="px-4 py-2 text-gray-600 font-inter hover:text-[#1a3edb] hover:bg-white rounded-lg transition-colors cursor-pointer"
                       >
                         {brand}
                       </div>
@@ -160,7 +160,7 @@ export default function NavBar() {
           ))}
 
           <div className="mt-6 flex flex-col gap-4 pb-4">
-            <button className="w-full bg-[#1a3edb] text-white py-3 cursor-pointer rounded-full font-medium hover:bg-blue-700 transition-colors">
+            <button className="w-full bg-[#1a3edb] text-white font-inter py-3 cursor-pointer rounded-full font-medium hover:bg-blue-700 transition-colors">
               Contact Us
             </button>
             

@@ -53,7 +53,7 @@ export default function TopPicksCar() {
 
   return (
     <section className="py-24 bg-white">
-      <div className=" px-4 md:px-4">
+      <div className=" px-4 md:px-14">
         {/* Header with Nav Buttons */}
         <div className="flex flex-col gap-6 mb-12">
           <div className="flex flex-col md:flex-row justify-between items-end gap-6">
@@ -68,7 +68,7 @@ export default function TopPicksCar() {
             </div>
 
             {/* Navigation Buttons for Desktop */}
-            <div className="hidden md:flex items-center gap-4">
+            <div className="hidden md:flex items-center gap-4 font-inter">
               <button className="bg-[#1a3edb] hover:bg-blue-800 text-white font-medium text-sm px-6 py-3 rounded-full transition-colors flex items-center justify-center gap-2">
                 View All Cars
                 <ArrowRight className="w-4 h-4" />
