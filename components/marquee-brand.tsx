@@ -26,17 +26,6 @@ export default function MarqueeBrand() {
       transition={{ duration: 0.6, ease: "easeOut" }}
       className=" bg-white"
     >
-      {/* Optional section label */}
-      {/* <motion.p
-        initial={{ opacity: 0, y: 10 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.5, delay: 0.1 }}
-        className="text-center text-xs md:text-sm font-inter text-gray-400 uppercase tracking-widest mb-6"
-      >
-        Trusted by leading brands
-      </motion.p> */}
-
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -52,11 +41,11 @@ export default function MarqueeBrand() {
       >
         <div className="flex animate-scroll whitespace-nowrap">
           {/* First set of images */}
-          <div className="flex items-center gap-12 mx-4 md:gap-20 md:mx-16">
+          <div className="flex items-center gap-4 mx-4 md:gap-16 md:mx-16">
             {marqueeBrands.map((src, index) => (
               <div
                 key={`brand-1-${index}`}
-                className="relative h-12 w-28 md:h-20 md:w-44 shrink-0 grayscale hover:grayscale-0 transition-all duration-300"
+                className="relative h-10 w-24 md:h-20 md:w-44 shrink-0 grayscale hover:grayscale-0 transition-all duration-300"
               >
                 <Image
                   src={src}
@@ -68,11 +57,11 @@ export default function MarqueeBrand() {
             ))}
           </div>
           {/* Duplicate set for seamless scrolling */}
-          <div className="flex items-center gap-12 mx-4 md:gap-20 md:mx-16">
+          <div className="flex items-center gap-4 mx-4 md:gap-16 md:mx-16">
             {marqueeBrands.map((src, index) => (
               <div
                 key={`brand-2-${index}`}
-                className="relative h-12 w-28 md:h-20 md:w-44 shrink-0 grayscale hover:grayscale-0 transition-all duration-300"
+                className="relative h-10 w-24 md:h-20 md:w-44 shrink-0 grayscale hover:grayscale-0 transition-all duration-300"
               >
                 <Image
                   src={src}
