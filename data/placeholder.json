@@ -1,0 +1,476 @@
+{
+  "site": {
+    "name": "BONGO",
+    "tagline": "Radiant Beauty Studio",
+    "description": "Where radiance begins. Experience transformative beauty treatments, premium skincare, and expert artistry in a serene sanctuary designed to illuminate your natural glow.",
+    "logo": {
+      "default": "/assets/images/logo.svg",
+      "light": "/assets/images/logo-light.svg",
+      "alt": "BONGO Beauty Studio Logo"
+    },
+    "seo": {
+      "title": "BONGO - Radiant Beauty Studio",
+      "description": "Discover your glow at BONGO. Premium skincare treatments, expert hair styling, and luxurious spa services in an elegant, modern sanctuary.",
+      "keywords": [
+        "beauty studio",
+        "radiant skincare",
+        "luxury hair salon",
+        "spa treatments",
+        "beauty transformation",
+        "wellness"
+      ],
+      "ogImage": "https://placehold.co/1200x630/0a0a0a/ffffff?text=BONGO+Beauty"
+    },
+    "theme": {
+      "primaryColor": "#000000",
+      "secondaryColor": "#ffffff",
+      "backgroundColor": "#ffffff",
+      "accentColor": "#171717",
+      "foregroundColor": "#0a0a0a",
+      "mutedColor": "#737373"
+    }
+  },
+  "navbar": {
+    "brandName": "BONGO",
+    "tagline": "GLOW WITH",
+    "logo": {
+      "default": "/assets/images/logo.svg",
+      "light": "/assets/images/logo-light.svg",
+      "alt": "BONGO Beauty Studio Logo"
+    },
+    "heroImage": "https://placehold.co/200x80/d4a574/d4a574?text=+",
+    "links": [
+      {
+        "name": "HOME",
+        "href": "/"
+      },
+      {
+        "name": "ABOUT US",
+        "href": "#about"
+      },
+      {
+        "name": "SERVICES",
+        "href": "#services"
+      },
+      {
+        "name": "PRODUCTS",
+        "href": "#products"
+      },
+      {
+        "name": "GALLERY",
+        "href": "#footer"
+      },
+      {
+        "name": "CONTACT",
+        "href": "#footer"
+      }
+    ],
+    "cta": {
+      "label": "BOOK YOUR GLOW",
+      "price": "$99",
+      "href": "#footer"
+    },
+    "contact": {
+      "phone": "+1 (555) BONGO-GLO",
+      "email": "hello@lumibeauty.co"
+    },
+    "socialLinks": [
+      {
+        "name": "Facebook",
+        "href": "https://facebook.com/lumibeauty",
+        "icon": "facebook"
+      },
+      {
+        "name": "Instagram",
+        "href": "https://instagram.com/lumi.beauty",
+        "icon": "instagram"
+      },
+      {
+        "name": "Twitter",
+        "href": "https://twitter.com/lumibeauty",
+        "icon": "twitter"
+      },
+      {
+        "name": "LinkedIn",
+        "href": "https://linkedin.com/company/lumibeauty",
+        "icon": "linkedin"
+      },
+      {
+        "name": "YouTube",
+        "href": "https://youtube.com/@lumibeauty",
+        "icon": "youtube"
+      }
+    ]
+  },
+  "hero": {
+    "backgroundText": ".GLOW",
+    "tagline": "ILLUMINATE YOUR BEAUTY WITH BONGO, WHERE RADIANCE MEETS ARTISTRY",
+    "scrollText": "[ Scroll to explore ]",
+    "images": [
+      "/assets/images/hero/hero-1.avif",
+      "/assets/images/hero/hero-2.avif",
+      "/assets/images/hero/hero-3.avif",
+      "/assets/images/hero/hero-4.avif",
+      "/assets/images/hero/hero-5.avif"
+    ],
+    "cta": {
+      "label": "DISCOVER BONGO",
+      "href": "#about"
+    },
+    "marqueeText": "RADIANCE • GLOW • BEAUTY • ELEGANCE • TRANSFORMATION • BONGONOUS • SHINE • BRILLIANCE • ",
+    "socialLinks": [
+      {
+        "name": "Facebook",
+        "href": "https://facebook.com/lumibeauty",
+        "icon": "facebook"
+      },
+      {
+        "name": "Instagram",
+        "href": "https://instagram.com/lumi.beauty",
+        "icon": "instagram"
+      },
+      {
+        "name": "Twitter",
+        "href": "https://twitter.com/lumibeauty",
+        "icon": "twitter"
+      },
+      {
+        "name": "LinkedIn",
+        "href": "https://linkedin.com/company/lumibeauty",
+        "icon": "linkedin"
+      },
+      {
+        "name": "YouTube",
+        "href": "https://youtube.com/@lumibeauty",
+        "icon": "youtube"
+      }
+    ]
+  },
+  "about": {
+    "headlineLines": [
+      {
+        "text": "EXPERIENCE A SANCTUARY",
+        "style": "outline"
+      },
+      {
+        "text": "WHERE LIGHT MEETS BEAUTY",
+        "style": "outline"
+      },
+      {
+        "text": "AND EVERY TREATMENT IS CRAFTED",
+        "style": "outline"
+      },
+      {
+        "text": "TO MAKE YOU SHINE",
+        "style": "filled"
+      }
+    ],
+    "cta": {
+      "label": "OUR STORY",
+      "href": "#footer"
+    }
+  },
+  "services": {
+    "sectionTitle": "OUR SERVICES",
+    "description": "Discover luminous treatments designed to enhance your natural radiance. From rejuvenating facials to expert styling, we illuminate every aspect of your beauty.",
+    "items": [
+      {
+        "id": "001",
+        "title": "Luminous Hair Studio",
+        "description": "Expert cuts, color, and styling to bring out your hair's natural shine and vitality.",
+        "image": "/assets/images/services/hair-dressing.avif",
+        "href": "#footer"
+      },
+      {
+        "id": "002",
+        "title": "Glow Facial Therapies",
+        "description": "Advanced skin treatments that restore radiance and reveal your most luminous complexion.",
+        "image": "/assets/images/services/facial.avif",
+        "href": "#footer"
+      },
+      {
+        "id": "003",
+        "title": "Radiance Aesthetics",
+        "description": "Precision beauty services including lash extensions, brow sculpting, and makeup artistry.",
+        "image": "/assets/images/services/esthetic.avif",
+        "href": "#footer"
+      },
+      {
+        "id": "004",
+        "title": "Serenity Spa Rituals",
+        "description": "Holistic body treatments and massage therapies to restore balance and inner glow.",
+        "image": "/assets/images/services/wellness.avif",
+        "href": "#footer"
+      }
+    ],
+    "cta": {
+      "label": "EXPLORE ALL SERVICES",
+      "href": "#footer"
+    }
+  },
+  "products": {
+    "sectionTitle": "BONGO COLLECTION",
+    "description": "Curated skincare and beauty essentials formulated to extend your glow beyond the studio. Each product is selected for its quality, efficacy, and luminous results.",
+    "items": [
+      {
+        "id": "product-1",
+        "name": "Radiance Renewal Serum",
+        "price": "89.00",
+        "currency": "USD",
+        "image": "/assets/images/products/1.avif",
+        "href": "#footer"
+      },
+      {
+        "id": "product-2",
+        "name": "Luminous Hydra Cream",
+        "price": "69.00",
+        "currency": "USD",
+        "image": "/assets/images/products/2.avif",
+        "href": "#footer"
+      },
+      {
+        "id": "product-3",
+        "name": "Glow Botanical Butter",
+        "price": "59.00",
+        "currency": "USD",
+        "image": "/assets/images/products/3.avif",
+        "href": "#footer"
+      },
+      {
+        "id": "product-4",
+        "name": "Shine Silk Hair Elixir",
+        "price": "49.00",
+        "currency": "USD",
+        "image": "/assets/images/products/4.avif",
+        "href": "#footer"
+      },
+      {
+        "id": "product-5",
+        "name": "Crystal Clear Toner",
+        "price": "39.00",
+        "currency": "USD",
+        "image": "/assets/images/products/5.avif",
+        "href": "#footer"
+      },
+      {
+        "id": "product-6",
+        "name": "Illuminating Eye Balm",
+        "price": "45.00",
+        "currency": "USD",
+        "image": "/assets/images/products/6.avif",
+        "href": "#footer"
+      }
+    ],
+    "cta": {
+      "label": "SHOP THE COLLECTION",
+      "href": "#footer"
+    }
+  },
+  "values": {
+    "sectionTitle": "THE BONGO PHILOSOPHY",
+    "description": "We believe true beauty radiates from within. Our approach combines artistry, science, and soul to illuminate your unique glow.",
+    "items": [
+      {
+        "id": "001",
+        "title": "Radiant Wellness",
+        "description": "We nurture both outer beauty and inner peace, creating treatments that rejuvenate mind, body, and spirit.",
+        "image": "/assets/images/values/value-1.avif"
+      },
+      {
+        "id": "002",
+        "title": "Personalized Artistry",
+        "description": "Every face tells a story. We craft bespoke treatments tailored to enhance your individual beauty.",
+        "image": "/assets/images/values/value-2.avif"
+      },
+      {
+        "id": "003",
+        "title": "Innovative Techniques",
+        "description": "We blend timeless beauty rituals with cutting-edge technology for transformative results.",
+        "image": "/assets/images/values/value-3.avif"
+      },
+      {
+        "id": "004",
+        "title": "Clean Beauty",
+        "description": "Committed to sustainable, cruelty-free products that are as kind to the earth as they are to your skin.",
+        "image": "/assets/images/values/value-4.avif"
+      }
+    ]
+  },
+  "testimonials": {
+    "sectionTitle": "CLIENT STORIES",
+    "items": [
+      {
+        "id": "testimonial-1",
+        "quote": "BONGO completely transformed my look! The stylists have an incredible eye for what works with your features. I walked out feeling like a brighter, more confident version of myself.",
+        "author": "Olivia Chen",
+        "role": "Creative Director",
+        "avatar": "/assets/images/testimonials/avatar-1.avif",
+        "rating": 5
+      },
+      {
+        "id": "testimonial-2",
+        "quote": "The Glow Facial is absolutely divine. My skin has never looked so luminous and healthy. The atmosphere is so calming - it's become my monthly ritual for self-care.",
+        "author": "Maya Anderson",
+        "role": "Wellness Coach",
+        "avatar": "/assets/images/testimonials/avatar-2.avif",
+        "rating": 5
+      },
+      {
+        "id": "testimonial-3",
+        "quote": "From the warm welcome to the final reveal, every moment at BONGO feels special. They truly listen to what you want and deliver results that exceed expectations.",
+        "author": "Isabella Torres",
+        "role": "Fashion Stylist",
+        "avatar": "/assets/images/testimonials/avatar-3.avif",
+        "rating": 5
+      },
+      {
+        "id": "testimonial-4",
+        "quote": "BONGO made my wedding day absolutely perfect. The bridal package was flawless - my hair and makeup stayed stunning from morning until the last dance. Truly magical!",
+        "author": "Sophie Williams",
+        "role": "Architect",
+        "avatar": "/assets/images/testimonials/avatar-4.avif",
+        "rating": 5
+      }
+    ],
+    "cta": {
+      "label": "START YOUR JOURNEY",
+      "href": "#footer"
+    }
+  },
+  "faq": {
+    "sectionLabel": "FAQ",
+    "sectionNumber": "06",
+    "headline": "Questions & Answers",
+    "description": "Everything you need to know about your BONGO experience, from booking to aftercare.",
+    "items": [
+      {
+        "id": "faq-1",
+        "question": "How do I book an appointment at BONGO?",
+        "answer": "You can book through our website by clicking 'Book Your Glow', call us at (555) BONGO-GLO, or use our BONGO app for instant scheduling. We recommend booking 3-5 days ahead for color services and special occasions."
+      },
+      {
+        "id": "faq-2",
+        "question": "What happens during my first BONGO experience?",
+        "answer": "Your journey begins with a complimentary Glow Consultation where our artists assess your skin, hair, or beauty goals. We'll create a personalized treatment plan and recommend products suited to your unique needs. Please arrive 15 minutes early for a welcome ritual."
+      },
+      {
+        "id": "faq-3",
+        "question": "What is your cancellation policy?",
+        "answer": "We kindly request 24 hours notice for cancellations or changes. Late cancellations may incur a 50% service fee. For bridal and group bookings, we require 72 hours notice. We always try to accommodate emergencies with understanding."
+      },
+      {
+        "id": "faq-4",
+        "question": "Are BONGO products clean and cruelty-free?",
+        "answer": "Absolutely. BONGO is committed to clean beauty. All our products are cruelty-free, vegan-friendly, and formulated without parabens, sulfates, or harmful chemicals. We partner with ethical brands that share our values."
+      },
+      {
+        "id": "faq-5",
+        "question": "Do you offer bridal and event packages?",
+        "answer": "Yes! Our Luminous Bridal Experience includes trials, day-of services, and options for your entire party. We also offer packages for photoshoots, galas, and milestone celebrations. Schedule a bridal consultation to design your perfect look."
+      },
+      {
+        "id": "faq-6",
+        "question": "What safety standards does BONGO follow?",
+        "answer": "Your wellbeing is paramount. BONGO maintains medical-grade sanitation with sterilized tools, single-use items, and thorough cleaning between each guest. Our studio features advanced air purification and all team members follow strict hygiene protocols."
+      }
+    ],
+    "cta": {
+      "label": "Get In Touch",
+      "href": "#footer"
+    }
+  },
+  "footer": {
+    "brand": {
+      "name": "BONGO",
+      "logo": "/assets/images/logo.svg"
+    },
+    "address": {
+      "title": "Visit Us",
+      "text": "88 Radiance Lane, Suite 200, Los Angeles CA 90028"
+    },
+    "contact": {
+      "title": "Connect",
+      "phone": "(555) BONGO-GLO",
+      "email": "hello@lumibeauty.co"
+    },
+    "pages": {
+      "title": "Explore",
+      "column1": [
+        {
+          "name": "Home",
+          "href": "/"
+        },
+        {
+          "name": "Our Story",
+          "href": "#about"
+        },
+        {
+          "name": "Services",
+          "href": "#services"
+        }
+      ],
+      "column2": [
+        {
+          "name": "Shop",
+          "href": "#products"
+        },
+        {
+          "name": "Gallery",
+          "href": "#gallery"
+        },
+        {
+          "name": "Contact",
+          "href": "#footer"
+        }
+      ]
+    },
+    "newsletter": {
+      "title": "Join the Glow",
+      "placeholder": "Your email address",
+      "buttonText": "SUBSCRIBE",
+      "privacyText": "By subscribing you agree to our",
+      "privacyLink": {
+        "text": "Privacy Policy",
+        "href": "#footer"
+      }
+    },
+    "socialLinks": [
+      {
+        "name": "Facebook",
+        "href": "https://facebook.com/lumibeauty",
+        "icon": "facebook"
+      },
+      {
+        "name": "Instagram",
+        "href": "https://instagram.com/lumi.beauty",
+        "icon": "instagram"
+      },
+      {
+        "name": "Twitter",
+        "href": "https://twitter.com/lumibeauty",
+        "icon": "twitter"
+      },
+      {
+        "name": "LinkedIn",
+        "href": "https://linkedin.com/company/lumibeauty",
+        "icon": "linkedin"
+      },
+      {
+        "name": "YouTube",
+        "href": "https://youtube.com/@lumibeauty",
+        "icon": "youtube"
+      }
+    ],
+    "copyright": "2026 BONGO Beauty Studio. All rights reserved.",
+    "credits": {
+      "poweredBy": {
+        "text": "Powered by",
+        "name": "Next.js"
+      },
+      "madeBy": {
+        "text": "Crafted by",
+        "name": "BONGO"
+      }
+    }
+  }
+}
