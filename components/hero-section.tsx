@@ -4,9 +4,16 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 
+const scrollToSection = (sectionId: string) => {
+  const element = document.getElementById(sectionId);
+  if (element) {
+    element.scrollIntoView({ behavior: "smooth" });
+  }
+};
+
 export default function HeroSection() {
   return (
-    <section className="relative overflow-hidden bg-white">
+    <section id="home" className="relative overflow-hidden bg-white">
       <div className="flex flex-col items-center justify-center px-4 py-8 md:px-14 md:py-12 gap-6 max-w-5xl mx-auto">
         {/* Headline */}
         <motion.h1
@@ -43,14 +50,16 @@ export default function HeroSection() {
             whileTap={{ scale: 0.97 }}
             transition={{ type: "spring", stiffness: 400, damping: 17 }}
           >
-            <Button size="lg">Book Your Ride</Button>
+            <Button size="lg" onClick={() => scrollToSection("contact")}>
+              Book Your Ride
+            </Button>
           </motion.div>
           <motion.div
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.97 }}
             transition={{ type: "spring", stiffness: 400, damping: 17 }}
           >
-            <Button variant="outline" size="lg">
+            <Button variant="outline" size="lg" onClick={() => scrollToSection("fleet")}>
               Browse Our Fleet
             </Button>
           </motion.div>

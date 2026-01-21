@@ -74,7 +74,7 @@ export default function TopPicksCar() {
   };
 
   return (
-    <section className="py-16 md:py-24 bg-white">
+    <section id="top-picks" className="py-16 md:py-24 bg-white">
       <div className="px-4 md:px-14">
         {/* Header */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 mb-12">

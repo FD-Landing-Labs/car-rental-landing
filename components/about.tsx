@@ -54,7 +54,7 @@ export default function About() {
   ];
 
   return (
-    <section className="bg-white pt-10 px-4 md:px-14">
+    <section id="about" className="bg-white pt-10 px-4 md:px-14">
       <div className="flex flex-col md:flex-row justify-between items-start gap-10 py-14">
         {/* Left Side - Headline */}
         <motion.div
@@ -105,7 +105,7 @@ export default function About() {
                 }}
                 className="flex flex-col border-l border-gray-300 pl-4"
               >
-                <span className="text-2xl md:text-4xl font-medium tracking-tighter">
+                <span className="text-2xl md:text-4xl font-medium tracking-tighter text-[#285ff5]">
                   <AnimatedCounter value={stat.value} suffix={stat.suffix} />
                 </span>
                 <span className="text-xs uppercase text-gray-500 font-medium tracking-wide font-inter mt-4">

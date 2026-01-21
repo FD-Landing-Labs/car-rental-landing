@@ -65,7 +65,7 @@ export const TestimonialSection = () => {
   };
 
   return (
-    <section className="py-16 md:py-24 bg-white overflow-hidden">
+    <section id="testimonials" className="py-16 md:py-24 bg-white overflow-hidden">
       <div className="px-4 md:px-14">
         {/* Header */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-12 gap-6">
@@ -108,7 +108,7 @@ export const TestimonialSection = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               transition={{ type: "spring", stiffness: 400, damping: 17 }}
-              className="w-12 h-12 rounded-full bg-gray-900 flex items-center justify-center hover:bg-gray-800 transition-colors duration-200"
+              className="w-12 h-12 rounded-full bg-[#285ff5] flex items-center justify-center hover:bg-[#1e4fea] transition-colors duration-200"
               aria-label="Scroll right"
             >
               <ChevronRight className="w-5 h-5 text-white" />
@@ -143,7 +143,7 @@ export const TestimonialSection = () => {
               {/* Quote Icon */}
               <div>
                 <svg
-                  className="w-10 h-10 md:w-12 md:h-12 text-gray-300 mb-6"
+                  className="w-10 h-10 md:w-12 md:h-12 text-[#285ff5]/30 mb-6"
                   viewBox="0 0 24 24"
                   fill="currentColor"
                 >
@@ -197,7 +197,7 @@ export const TestimonialSection = () => {
           <motion.button
             onClick={() => scroll("right")}
             whileTap={{ scale: 0.95 }}
-            className="w-10 h-10 rounded-full bg-gray-900 flex items-center justify-center"
+            className="w-10 h-10 rounded-full bg-[#285ff5] flex items-center justify-center"
             aria-label="Scroll right"
           >
             <ChevronRight className="w-5 h-5 text-white" />

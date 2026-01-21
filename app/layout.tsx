@@ -18,8 +18,8 @@ const orbitron = Orbitron({
 });
 
 export const metadata: Metadata = {
-  title: "FD Car Rental",
-  description: "Car Rental",
+  title: "DreamDrive - Luxury Car Rentals",
+  description: "Experience the thrill of driving luxury cars with DreamDrive. Curated selection, seamless booking, and doorstep delivery for unforgettable rides.",
 };
 
 export default function RootLayout({

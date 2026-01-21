@@ -8,14 +8,16 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default:
-          "bg-gradient-to-b from-gray-700 via-gray-800 to-gray-900 text-white shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1),0_1px_3px_rgba(0,0,0,0.3)] border border-gray-600/50 hover:from-gray-600 hover:via-gray-700 hover:to-gray-800",
+          "bg-[#285ff5] text-white shadow-[0_1px_2px_rgba(0,0,0,0.1),0_4px_12px_rgba(40,95,245,0.3)] hover:bg-[#1e4fea] hover:shadow-[0_1px_2px_rgba(0,0,0,0.1),0_6px_16px_rgba(40,95,245,0.4)] active:bg-[#1a3dd7]",
         primary:
-          "bg-gradient-to-b from-blue-500 via-blue-600 to-blue-700 text-white shadow-[inset_0_1px_0_0_rgba(255,255,255,0.15),0_1px_3px_rgba(0,0,0,0.3)] border border-blue-400/50 hover:from-blue-400 hover:via-blue-500 hover:to-blue-600",
+          "bg-gradient-to-b from-[#5990ff] via-[#285ff5] to-[#1e4fea] text-white shadow-[inset_0_1px_0_0_rgba(255,255,255,0.2),0_1px_3px_rgba(0,0,0,0.2),0_4px_12px_rgba(40,95,245,0.3)] border border-[#285ff5]/50 hover:from-[#6a9dff] hover:via-[#3a6df7] hover:to-[#285ff5]",
         secondary:
           "bg-gray-100 text-gray-700 border border-gray-200 hover:bg-gray-200",
         outline:
-          "border border-gray-300 bg-transparent text-gray-700 hover:bg-gray-100",
+          "border-2 border-[#285ff5] bg-transparent text-[#285ff5] hover:bg-[#285ff5]/10",
         ghost: "text-gray-700 hover:bg-gray-100",
+        dark:
+          "bg-gradient-to-b from-gray-700 via-gray-800 to-gray-900 text-white shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1),0_1px_3px_rgba(0,0,0,0.3)] border border-gray-600/50 hover:from-gray-600 hover:via-gray-700 hover:to-gray-800",
       },
       size: {
         sm: "h-9 px-4 text-xs",

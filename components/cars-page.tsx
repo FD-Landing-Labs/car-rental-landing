@@ -5,6 +5,13 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 
+const scrollToSection = (sectionId: string) => {
+  const element = document.getElementById(sectionId);
+  if (element) {
+    element.scrollIntoView({ behavior: "smooth" });
+  }
+};
+
 export default function CarsPage() {
   const cars = [
     {
@@ -37,7 +44,7 @@ export default function CarsPage() {
   ];
 
   return (
-    <section className="bg-white px-4 md:px-14 py-16 md:py-24">
+    <section id="fleet" className="bg-white px-4 md:px-14 py-16 md:py-24">
       {/* Header */}
       <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 mb-12">
         <motion.div
@@ -65,7 +72,7 @@ export default function CarsPage() {
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
         >
-          <Button size="lg">View Full Fleet</Button>
+          <Button size="lg" onClick={() => scrollToSection("top-picks")}>View Full Fleet</Button>
         </motion.div>
       </div>
 
@@ -132,7 +139,7 @@ export default function CarsPage() {
                 whileTap={{ scale: 0.98 }}
                 transition={{ type: "spring", stiffness: 400, damping: 17 }}
               >
-                <Button fullWidth>Book Now</Button>
+                <Button fullWidth onClick={() => scrollToSection("contact")}>Book Now</Button>
               </motion.div>
             </div>
           </motion.div>

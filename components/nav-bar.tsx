@@ -11,6 +11,21 @@ import {
 } from "framer-motion";
 import { Button } from "@/components/ui/button";
 
+const scrollToSection = (sectionId: string) => {
+  const element = document.getElementById(sectionId);
+  if (element) {
+    element.scrollIntoView({ behavior: "smooth" });
+  }
+};
+
+// Map nav labels to section IDs
+const sectionMap: Record<string, string> = {
+  "Home": "home",
+  "About Us": "about",
+  "Our Fleet": "fleet",
+  "Car Brands": "fleet",
+};
+
 export default function NavBar() {
   const [activeItem, setActiveItem] = useState("Home");
   const [isBrandsOpen, setIsBrandsOpen] = useState(false);
@@ -34,9 +49,7 @@ export default function NavBar() {
     { label: "Home", hasDropdown: false },
     { label: "About Us", hasDropdown: false },
     { label: "Our Fleet", hasDropdown: false },
-    { label: "Car Brands", hasDropdown: true },
-    { label: "Our Services", hasDropdown: false },
-    { label: "Lease To Own", hasDropdown: false },
+    { label: "Car Brands", hasDropdown: false },
   ];
 
   const carBrands = [
@@ -55,7 +68,17 @@ export default function NavBar() {
       setActiveItem(item);
       setIsMobileMenuOpen(false);
       setIsBrandsOpen(false);
+      // Scroll to the corresponding section
+      const sectionId = sectionMap[item];
+      if (sectionId) {
+        scrollToSection(sectionId);
+      }
     }
+  };
+
+  const handleContactClick = () => {
+    setIsMobileMenuOpen(false);
+    scrollToSection("contact");
   };
 
   return (
@@ -72,7 +95,7 @@ export default function NavBar() {
           className="flex justify-between items-center px-4 md:px-14 h-20 bg-white/80 backdrop-blur-md border-b border-gray-100"
         >
           {/* Logo */}
-          <Link href="/">
+          <Link href="/" onClick={() => scrollToSection("home")}>
             <motion.span
               className="font-header font-semibold text-2xl text-gray-900 tracking-tight"
               whileHover={{ scale: 1.02 }}
@@ -113,7 +136,7 @@ export default function NavBar() {
                     {activeItem === item.label && (
                       <motion.div
                         layoutId="activeNavBg"
-                        className="absolute inset-0 bg-gray-900 rounded-full"
+                        className="absolute inset-0 bg-[#285ff5] rounded-full"
                         transition={{
                           type: "spring",
                           stiffness: 400,
@@ -157,7 +180,7 @@ export default function NavBar() {
                           backgroundColor: "rgb(239 246 255)",
                           x: 4,
                         }}
-                        className="px-4 py-2.5 cursor-pointer rounded-xl text-sm font-inter font-medium text-gray-700 hover:text-blue-700"
+                        className="px-4 py-2.5 cursor-pointer rounded-xl text-sm font-inter font-medium text-gray-700 hover:text-[#285ff5]"
                       >
                         {brand}
                       </motion.div>
@@ -188,7 +211,7 @@ export default function NavBar() {
               whileTap={{ scale: 0.98 }}
               transition={{ type: "spring", stiffness: 400, damping: 17 }}
             >
-              <Button>Contact Us</Button>
+              <Button onClick={handleContactClick}>Contact Us</Button>
             </motion.div>
           </motion.div>
 
@@ -247,7 +270,7 @@ export default function NavBar() {
               animate={{ x: 0 }}
               exit={{ x: "100%" }}
               transition={{ type: "spring", stiffness: 300, damping: 30 }}
-              className="fixed top-0 right-0 bottom-0 w-full max-w-sm bg-white z-50 lg:hidden shadow-2xl"
+              className="fixed top-0 right-0 bottom-0 w-full bg-white z-50 lg:hidden shadow-2xl"
             >
               <div className="flex flex-col h-full">
                 {/* Mobile Header */}
@@ -278,7 +301,7 @@ export default function NavBar() {
                         <motion.div
                           onClick={() => handleNavClick(item.label)}
                           className={`flex items-center justify-between py-3.5 px-4 rounded-xl cursor-pointer font-inter font-medium transition-colors ${activeItem === item.label
-                            ? "bg-gray-900 text-white"
+                            ? "bg-[#285ff5] text-white"
                             : "text-gray-700 hover:bg-gray-100"
                             }`}
                           whileTap={{ scale: 0.98 }}
@@ -315,7 +338,7 @@ export default function NavBar() {
                                       transition: { delay: brandIndex * 0.05 },
                                     }}
                                     whileHover={{ x: 4 }}
-                                    className="px-4 py-2.5 text-gray-600 hover:text-[#1a3edb] rounded-lg cursor-pointer font-inter text-sm"
+                                    className="px-4 py-2.5 text-gray-600 hover:text-[#285ff5] rounded-lg cursor-pointer font-inter text-sm"
                                   >
                                     {brand}
                                   </motion.div>
@@ -341,7 +364,7 @@ export default function NavBar() {
                     whileTap={{ scale: 0.98 }}
                     transition={{ type: "spring", stiffness: 400, damping: 17 }}
                   >
-                    <Button size="lg" fullWidth>Contact Us</Button>
+                    <Button size="lg" fullWidth onClick={handleContactClick}>Contact Us</Button>
                   </motion.div>
                   <motion.div
                     whileHover={{ scale: 1.02 }}

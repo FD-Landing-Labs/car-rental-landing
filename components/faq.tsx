@@ -43,7 +43,7 @@ const faqs = [
 
 export default function Faq() {
   return (
-    <section className="bg-gray-50 py-16 md:py-24 px-4 md:px-14">
+    <section id="faq" className="bg-gray-50 py-16 md:py-24 px-4 md:px-14">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16">
         {/* Left Side - Text */}
         <motion.div
@@ -89,7 +89,7 @@ export default function Faq() {
               >
                 <AccordionItem
                   value={`item-${index}`}
-                  className="border-0 rounded-xl overflow-hidden data-[state=open]:bg-gray-900 data-[state=closed]:bg-gray-100 transition-colors duration-300"
+                  className="border-0 rounded-xl overflow-hidden data-[state=open]:bg-[#285ff5] data-[state=closed]:bg-gray-100 transition-colors duration-300"
                 >
                   <AccordionTrigger className="px-5 py-4 text-base md:text-xl font-inter tracking-tighter font-medium hover:no-underline cursor-pointer data-[state=open]:text-white data-[state=closed]:text-gray-900 [&>svg]:data-[state=open]:text-white [&>svg]:data-[state=closed]:text-gray-500">
                     {faq.question}

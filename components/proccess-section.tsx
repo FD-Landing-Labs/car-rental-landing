@@ -5,6 +5,13 @@ import { motion } from "framer-motion";
 import { Search, Car, CalendarDays, Settings, CreditCard, KeyRound } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
+const scrollToSection = (sectionId: string) => {
+  const element = document.getElementById(sectionId);
+  if (element) {
+    element.scrollIntoView({ behavior: "smooth" });
+  }
+};
+
 const processSteps = [
   {
     id: 1,
@@ -95,7 +102,7 @@ export default function ProccessSection() {
   const ActiveIcon = activeStep.icon;
 
   return (
-    <section className="py-16 md:py-24 bg-white overflow-hidden">
+    <section id="how-it-works" className="py-16 md:py-24 bg-white overflow-hidden">
       <div className="px-4 md:px-14">
         {/* Header */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-8 md:mb-12 gap-6">
@@ -181,7 +188,7 @@ export default function ProccessSection() {
                 onClick={() => handleStepClick(index)}
                 className={`h-2 rounded-full transition-all duration-300 ${
                   activeIndex === index
-                    ? "w-8 bg-gray-900"
+                    ? "w-8 bg-[#285ff5]"
                     : "w-2 bg-gray-300 hover:bg-gray-400"
                 }`}
               />
@@ -194,7 +201,7 @@ export default function ProccessSection() {
             whileTap={{ scale: 0.98 }}
             className="mt-6"
           >
-            <Button size="lg" fullWidth>Start Booking</Button>
+            <Button size="lg" fullWidth onClick={() => scrollToSection("contact")}>Start Booking</Button>
           </motion.div>
         </motion.div>
 
@@ -313,7 +320,7 @@ export default function ProccessSection() {
               onClick={() => handleStepClick(index)}
               className={`h-2 rounded-full transition-all duration-300 ${
                 activeIndex === index
-                  ? "w-8 bg-gray-900"
+                  ? "w-8 bg-[#285ff5]"
                   : "w-2 bg-gray-300 hover:bg-gray-400"
               }`}
             />

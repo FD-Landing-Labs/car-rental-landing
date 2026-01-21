@@ -4,12 +4,19 @@ import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
+const scrollToSection = (sectionId: string) => {
+  const element = document.getElementById(sectionId);
+  if (element) {
+    element.scrollIntoView({ behavior: "smooth" });
+  }
+};
+
 export default function Footer() {
   const navLinks = [
-    { label: "How It Works", href: "#" },
-    { label: "Our Fleet", href: "#" },
-    { label: "About Us", href: "#" },
-    { label: "Contact", href: "#" },
+    { label: "How It Works", sectionId: "how-it-works" },
+    { label: "Our Fleet", sectionId: "fleet" },
+    { label: "About Us", sectionId: "about" },
+    { label: "Contact", sectionId: "contact" },
   ];
 
   const socialLinks = [
@@ -19,7 +26,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="bg-gray-950 pt-8 pb-12 px-4 md:px-14">
+    <footer id="contact" className="bg-gray-950 pt-8 pb-12 px-4 md:px-14">
       {/* CTA Card */}
       <motion.div
         initial={{ opacity: 0, y: 30 }}
@@ -69,9 +76,16 @@ export default function Footer() {
               <p className="text-gray-400 text-xs uppercase tracking-widest font-inter mb-2">Get in touch:</p>
               <Link
                 href="mailto:hello@dreamdrive.com"
-                className="text-white text-lg md:text-xl font-inter tracking-tight flex items-center gap-2 hover:text-gray-400 transition-colors group"
+                className="text-white text-lg md:text-xl font-inter tracking-tight flex items-center gap-2 hover:text-blue-200 transition-colors group"
               >
                 hello@dreamdrive.com
+                <ArrowUpRight className="w-5 h-5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+              </Link>
+              <Link
+                href="tel:+1234567890"
+                className="text-white text-lg md:text-xl font-inter tracking-tight flex items-center gap-2 hover:text-blue-200 transition-colors group mt-2"
+              >
+                +1 (234) 567-890
                 <ArrowUpRight className="w-5 h-5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
               </Link>
             </motion.div>
@@ -85,13 +99,13 @@ export default function Footer() {
               className="flex flex-wrap gap-6 md:gap-10"
             >
               {navLinks.map((link) => (
-                <Link
+                <button
                   key={link.label}
-                  href={link.href}
-                  className="text-gray-300 text-sm md:text-base font-inter hover:text-white transition-colors tracking-tighter"
+                  onClick={() => scrollToSection(link.sectionId)}
+                  className="text-gray-300 text-sm md:text-base font-inter hover:text-white transition-colors tracking-tighter cursor-pointer"
                 >
                   {link.label}
-                </Link>
+                </button>
               ))}
             </motion.nav>
           </div>
@@ -101,7 +115,7 @@ export default function Footer() {
       {/* Main Footer */}
       <div className="relative">
         {/* Gradient Glow Effect */}
-        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-3xl h-64 bg-gradient-to-t from-white/20 via-gray-500/10 to-transparent blur-3xl pointer-events-none" />
+        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-3xl h-64 bg-gradient-to-t from-blue-500/50 via-gray-500/10 to-transparent blur-3xl pointer-events-none" />
 
         {/* Large Brand Name */}
         <motion.div
