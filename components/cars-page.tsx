@@ -1,118 +1,143 @@
-import { BookA, Car, CarFront, DoorClosed, User } from "lucide-react";
+"use client";
+
+import { Car, Users, DoorOpen, Gauge } from "lucide-react";
 import Image from "next/image";
+import { motion } from "framer-motion";
+import { Button } from "@/components/ui/button";
+
 export default function CarsPage() {
   const cars = [
     {
       id: 1,
-      image: "/assets/images/hero-car.avif",
-      name: "Sports Coupe",
-      type: "Sports",
-      seats: "2",
-      doors: "2",
-      transmission: "Auto",
+      image: "/assets/images/cars/5.png",
+      name: "Porsche 911 Carrera 2025",
+      type: "Sports Car",
+      seats: "5 Seater",
+      doors: "4 Door",
+      transmission: "Automatic",
     },
     {
       id: 2,
-      image: "/assets/images/hero-car.avif",
-      name: "Luxury SUV",
-      type: "SUV",
-      seats: "5",
-      doors: "4",
-      transmission: "Auto",
+      image: "/assets/images/cars/2.png",
+      name: "BMW M4 Competition 2024",
+      type: "Sports Car",
+      seats: "5 Seater",
+      doors: "4 Door",
+      transmission: "Automatic",
     },
     {
       id: 3,
-      image: "/assets/images/hero-car.avif",
-      name: "Executive Sedan",
-      type: "Sedan",
-      seats: "5",
-      doors: "4",
-      transmission: "Auto",
+      image: "/assets/images/cars/3.png",
+      name: "Mercedes-Benz E-Class 2023",
+      type: "Sports Car",
+      seats: "5 Seater",
+      doors: "4 Door",
+      transmission: "Automatic",
     },
   ];
 
   return (
-    <div className="flex flex-col px-4 md:px-14 py-12 md:py-24 gap-12 ">
-      <div className="flex flex-col gap-4">
-        <h2 className="text-black font-header text-3xl md:text-4xl ">
-          Find Your Perfect Ride
-        </h2>
-        <div className="flex flex-col md:flex-row justify-between items-end gap-6">
-          <p className="md:w-2/5 font-inter text-gray-500 text-sm md:text-lg leading-relaxed">
+    <section className="bg-white px-4 md:px-14 py-16 md:py-24">
+      {/* Header */}
+      <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 mb-12">
+        <motion.div
+          initial={{ opacity: 0, x: -20 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="flex flex-col gap-4"
+        >
+          <h2 className="text-black font-header text-3xl md:text-5xl tracking-tight">
+            Find Your Perfect Ride
+          </h2>
+          <p className="max-w-lg font-inter text-gray-500 text-sm md:text-lg tracking-tighter leading-relaxed">
             Explore a handpicked collection of luxury and performance cars built
             for every journey. From sleek sedans to bold SUVs and electric
             innovators
           </p>
+        </motion.div>
 
-          <button className="bg-[#1a3edb] hover:bg-blue-800 text-white font-inter  font-medium text-sm w-full md:w-auto px-6 py-3 rounded-full transition-colors">
-            View All Cars
-          </button>
-        </div>
+        <motion.div
+          initial={{ opacity: 0, x: 20 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+          whileHover={{ scale: 1.02 }}
+          whileTap={{ scale: 0.98 }}
+        >
+          <Button size="lg">View Full Fleet</Button>
+        </motion.div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 font-inter gap-4">
-        {cars.map((car) => (
-          <div
+      {/* Car Cards Grid */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {cars.map((car, index) => (
+          <motion.div
             key={car.id}
-            className="bg-gray-300 p-4 rounded-3xl overflow-hidden flex flex-col justify-between"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-50px" }}
+            transition={{ duration: 0.5, delay: index * 0.1 }}
+            whileHover={{ y: -5 }}
+            className="group bg-gray-50 rounded-3xl p-4 flex flex-col border border-gray-100 hover:shadow-xl hover:shadow-gray-200/50 transition-all duration-300"
           >
-            {/* Image Section */}
-            <div className="relative h-48 w-full ">
+            {/* Car Image */}
+            <div className="relative h-48 md:h-56 w-full mb-6 overflow-hidden rounded-2xl">
               <Image
                 src={car.image}
                 alt={car.name}
                 fill
-                className="object-cover rounded-lg"
+                className="object-cover group-hover:scale-105 transition-transform duration-500"
               />
             </div>
 
-            {/* Content Section */}
-            <div className="p-4 flex flex-col gap-4">
-              <h3 className="text-black font-header text-lg md:text-lg font-medium">
-                {car.name}
-              </h3>
+            {/* Car Name */}
+            <h3 className="text-gray-900 font-inter tracking-tighter text-lg md:text-xl font-medium mb-4">
+              {car.name}
+            </h3>
 
-              {/* Specs Grid */}
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
-                <div className="flex gap-2 items-center bg-gray-200 rounded-full px-2 py-2 font-inter">
-                  <CarFront size={16} className="text-black" />
-                  <span className="text-black text-xs font-medium">
-                    {car.type}
-                  </span>
-                </div>
-                <div className="flex gap-2 items-center bg-gray-200 rounded-full px-2 py-2">
-                  <User size={16} className="text-black" />
-                  <span className="text-black text-xs font-medium">
-                    {car.seats} seats
-                  </span>
-                </div>
-                <div className="flex gap-2 items-center bg-gray-200 rounded-full px-2 py-2">
-                  <DoorClosed size={16} className="text-black" />
-                  <span className="text-black text-xs font-medium">
-                    {car.doors} doors
-                  </span>
-                </div>
-                <div className="flex gap-2 items-center bg-gray-200 rounded-full px-2 py-2">
-                  <BookA size={16} className="text-black" />
-                  <span className="text-black text-xs font-medium">
-                    {car.transmission}
-                  </span>
-                </div>
+            {/* Specs Row */}
+            <div className="flex flex-wrap gap-2 md:gap-4 mb-6 font-inter">
+              <div className="flex items-center gap-1.5 text-gray-600">
+                <Car size={16} className="text-gray-400" />
+                <span className="text-xs md:text-sm">{car.type}</span>
               </div>
-
-              {/* Action Buttons */}
-              <div className="grid grid-cols-1 gap-3 mt-auto">
-                <button className="bg-gray-200 text-black px-4 py-2.5 rounded-full text-sm font-medium hover:bg-gray-400 transition-colors">
-                  View Details
-                </button>
-                <button className="bg-[#1a3edb] hover:bg-blue-800 text-white px-4 py-2.5 rounded-full text-sm font-medium hover:bg-gray-900 transition-colors">
-                  Book Now
-                </button>
+              <div className="flex items-center gap-1.5 text-gray-600">
+                <Users size={16} className="text-gray-400" />
+                <span className="text-xs md:text-sm">{car.seats}</span>
+              </div>
+              <div className="flex items-center gap-1.5 text-gray-600">
+                <DoorOpen size={16} className="text-gray-400" />
+                <span className="text-xs md:text-sm">{car.doors}</span>
+              </div>
+              <div className="flex items-center gap-1.5 text-gray-600">
+                <Gauge size={16} className="text-gray-400" />
+                <span className="text-xs md:text-sm">{car.transmission}</span>
               </div>
             </div>
-          </div>
+
+            {/* Action Buttons */}
+            <div className="grid grid-cols-2 gap-3 mt-auto">
+              <motion.div
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+                transition={{ type: "spring", stiffness: 400, damping: 17 }}
+              >
+                <Button variant="secondary" fullWidth>
+                  View Details
+                </Button>
+              </motion.div>
+              <motion.div
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+                transition={{ type: "spring", stiffness: 400, damping: 17 }}
+              >
+                <Button fullWidth>Book Now</Button>
+              </motion.div>
+            </div>
+          </motion.div>
         ))}
       </div>
-    </div>
+    </section>
   );
 }

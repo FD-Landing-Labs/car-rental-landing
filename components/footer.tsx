@@ -1,142 +1,145 @@
-import { Facebook, Linkedin, Twitter } from "lucide-react";
+"use client";
+
+import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 export default function Footer() {
+  const navLinks = [
+    { label: "How It Works", href: "#" },
+    { label: "Our Fleet", href: "#" },
+    { label: "About Us", href: "#" },
+    { label: "Contact", href: "#" },
+  ];
+
+  const socialLinks = [
+    { label: "LinkedIn", href: "#" },
+    { label: "Facebook", href: "#" },
+    { label: "Twitter", href: "#" },
+  ];
+
   return (
-    <footer className="bg-gray-900 text-white pt-16 pb-8">
-      <div className="container mx-auto px-4">
-        <div className="flex flex-col md:flex-row justify-between gap-12 mb-12">
-          {/* Brand Section */}
-          <div className="w-full md:w-2/5 flex flex-col gap-4">
-            <div className="flex flex-col gap-2">
-              <h3 className="text-xl font-medium font-header text-white">
-                Dream Drive
-              </h3>
-              <p className="text-gray-400 text-sm leading-relaxed font-inter">
-                Experience the thrill of the road with our premium car rental
-                services. Luxury, comfort, and performance guaranteed.
-              </p>
-            </div>
-            <div className="flex gap-4 font-inter">
-              <Link
-                href="#"
-                className="bg-gray-800 p-2 rounded-full text-white hover:bg-blue-600 transition-colors"
-              >
-                <Facebook size={18} />
-              </Link>
-              <Link
-                href="#"
-                className="bg-gray-800 p-2 rounded-full text-white hover:bg-blue-400 transition-colors"
-              >
-                <Twitter size={18} />
-              </Link>
-              <Link
-                href="#"
-                className="bg-gray-800 p-2 rounded-full text-white hover:bg-blue-700 transition-colors"
-              >
-                <Linkedin size={18} />
-              </Link>
-            </div>
-          </div>
+    <footer className="bg-gray-950 pt-8 pb-12 px-4 md:px-14">
+      {/* CTA Card */}
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] }}
+        className="bg-gray-900 rounded-3xl p-8 md:p-12 mb-16 relative overflow-hidden"
+      >
+        {/* Subtle gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-gray-900/20 pointer-events-none" />
 
-          {/* Right Side Sections */}
-          <div className="w-full md:w-2/3 grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Quick Links */}
-            <div>
-              <h3 className="text-lg font-medium font-header mb-6">
-                Quick Links
-              </h3>
-              <ul className="space-y-3 text-sm text-gray-400 font-inter">
-                <li>
-                  <Link href="/" className="hover:text-white transition-colors">
-                    Home
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="hover:text-white transition-colors">
-                    About Us
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="hover:text-white transition-colors">
-                    Our Fleet
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="hover:text-white transition-colors">
-                    Blog
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="hover:text-white transition-colors">
-                    Contact
-                  </Link>
-                </li>
-              </ul>
-            </div>
+        <div className="relative z-10">
+          {/* Label */}
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.4, delay: 0.1 }}
+            className="flex items-center gap-2 mb-6"
+          >
+            <span className="text-gray-400 text-xs uppercase tracking-widest font-inter">✦ Contact Us</span>
+          </motion.div>
 
-            {/* Contact Us */}
-            <div>
-              <h3 className="text-lg font-medium font-header mb-4">
-                Contact Us
-              </h3>
-              <ul className="space-y-3 text-sm text-gray-400 font-inter">
-                <li className="pt-2">
-                  <span className="block text-white font-medium">Address:</span>
-                  123 Luxury Lane New York, NY 10001
-                </li>
-                <li>
-                  <span className="block text-white font-medium">Phone:</span>
-                  (123) 456-7890
-                </li>
-                <li>
-                  <span className="block text-white font-medium">Email:</span>
-                  info@dreamdrive.com
-                </li>
-              </ul>
-            </div>
+          {/* Headline */}
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="font-inter text-2xl md:text-4xl leading- tracking-tighter max-w-lg mb-12"
+          >
+            <span className="text-white font-medium">Ready to hit the road?</span>{" "}
+            <span className="text-gray-500">
+              Rent your dream car today or reach out to learn more.
+            </span>
+          </motion.h2>
 
-            {/* Newsletter */}
-            <div>
-              <h3 className="text-lg font-medium font-header mb-6">
-                Newsletter
-              </h3>
-              <p className="text-gray-400 text-sm mb-4 font-inter">
-                Subscribe to our newsletter for the latest updates and exclusive
-                offers.
-              </p>
-              <form className="flex flex-col gap-3">
-                <input
-                  type="email"
-                  placeholder="Enter your email"
-                  className="bg-gray-800 text-white px-4 py-3 rounded-lg focus:outline-none focus:ring-1 focus:ring-blue-500 text-sm"
-                />
-                <button
-                  type="submit"
-                  className="bg-blue-600 text-white px-4 py-3 rounded-lg hover:bg-blue-700 transition-colors font-medium text-sm"
+          {/* Bottom Row */}
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-8">
+            {/* Contact Info */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+            >
+              <p className="text-gray-400 text-xs uppercase tracking-widest font-inter mb-2">Get in touch:</p>
+              <Link
+                href="mailto:hello@dreamdrive.com"
+                className="text-white text-lg md:text-xl font-inter tracking-tight flex items-center gap-2 hover:text-gray-400 transition-colors group"
+              >
+                hello@dreamdrive.com
+                <ArrowUpRight className="w-5 h-5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+              </Link>
+            </motion.div>
+
+            {/* Navigation Links */}
+            <motion.nav
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.4 }}
+              className="flex flex-wrap gap-6 md:gap-10"
+            >
+              {navLinks.map((link) => (
+                <Link
+                  key={link.label}
+                  href={link.href}
+                  className="text-gray-300 text-sm md:text-base font-inter hover:text-white transition-colors tracking-tighter"
                 >
-                  Subscribe
-                </button>
-              </form>
-            </div>
+                  {link.label}
+                </Link>
+              ))}
+            </motion.nav>
           </div>
         </div>
+      </motion.div>
+
+      {/* Main Footer */}
+      <div className="relative">
+        {/* Gradient Glow Effect */}
+        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-3xl h-64 bg-gradient-to-t from-white/20 via-gray-500/10 to-transparent blur-3xl pointer-events-none" />
+
+        {/* Large Brand Name */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.95 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="flex justify-center items-center py-12 "
+        >
+          <h2 className="font-header text-5xl md:text-8xl lg:text-[24vh] text-white tracking-tighter text-center">
+            Dream Drive
+          </h2>
+        </motion.div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500">
-          <p className="font-inter">© 2026 Dream Drive. All rights reserved.</p>
-          <div className="flex gap-6 font-inter">
-            <Link href="#" className="hover:text-white transition-colors">
-              Privacy Policy
-            </Link>
-            <Link href="#" className="hover:text-white transition-colors">
-              Terms of Service
-            </Link>
-            <Link href="#" className="hover:text-white transition-colors">
-              Cookie Policy
-            </Link>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.4 }}
+          className="flex flex-col md:flex-row justify-between items-center gap-6 pt-8 border-t border-gray-800/50"
+        >
+          <p className="text-gray-500 text-xs font-inter uppercase tracking-widest">
+            © 2026 Dream Drive. All rights reserved.
+          </p>
+
+          <div className="flex items-center gap-8">
+            {socialLinks.map((link) => (
+              <Link
+                key={link.label}
+                href={link.href}
+                className="text-gray-500 text-xs font-inter hover:text-white transition-colors uppercase tracking-widest"
+              >
+                {link.label}
+              </Link>
+            ))}
           </div>
-        </div>
+        </motion.div>
       </div>
     </footer>
   );
